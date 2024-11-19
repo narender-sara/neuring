@@ -1,0 +1,17 @@
+- name: Dr. Riley Bove
+  photo: riley-bove.jpg
+  info: Riley Bove, MD
+  email: riley.bove@ucsf.edu
+  # github: https://github.com/
+  # researchgate: https://www.researchgate.net/
+  # scholar: https://scholar.google.com/citations?user=B7vSqZsAAAAJ
+  # cv: cv/cv.pdf
+  # Change the items in "education" you have (up to 6)
+  education:
+    [
+      "Education 1",
+      "Education 2",
+    ]
+
+  educationshort:
+    ["Ed1", "Ed2"]
