@@ -11,8 +11,8 @@ permalink: /
 </div>
 
 <div class="col-sm-10">
-  <h1>NEWRING</h1>
-  <h2>NEuroimmunology and Women's health, Reproduction and Innovation Network Group</h2>
+  <h1>NEURING</h1>
+  <h2>Neurologists advancing Women’s health, Reproduction and Innovation Group</h2>
 </div>
 
 
