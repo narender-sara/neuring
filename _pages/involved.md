@@ -8,10 +8,22 @@ permalink: /involved/
 ## Get Involved
 
 <div class="jumbotron">
-  <h3>Avenues for Collaboration</h3>
-  <strong>Submission:</strong> Idea for research? Please submit a brief paragraph with the following details: Investigator, email, institution, title, brief synopsis detailing proposed participants, data sources and analyses.
-
-  <strong>Next steps:</strong> The advisory committee meets monthly to review these data requests, meet formally with submitting investigator to propose best strategy, and pool interested centers to expedite collaborations.
+  <h3>Avenues for Collaboration - Research Collaborations:</h3>
+  - <strong>Submission:</strong>
+    Have an idea for research? Submit a brief paragraph including the following details:
+    - Investigator name
+    - Email address
+    - Institution
+    - Title and brief synopsis of the project (1 paragraph)
+    - Proposed participants, data sources, and analyses
+    
+  - <strong>Next steps:</strong> 
+    The advisory committee meets monthly to review these data requests, meet formally with submitting investigator to propose best strategy, and pool interested centers to expedite collaborations.
+  
+  Learning and Dissemination
+  - Ongoing participation in Conferences THROUGH WOMEN’S NEUROLOGY TRAINING CURRICULUM 
+  - JOINT PROJECTS ACROSS DISCIPLINES TO PROMOTE WOMEN’S NEUROLOGY AS A DISTINCT SUBSEPECIALITY (BOSTON, UCSF, PITT, ETC)
+  
 </div>
 
 <br>
@@ -57,4 +69,31 @@ permalink: /involved/
 
 </div>
 {% endif %}
+</div>
+
+<br>
+
+## Partners
+
+<div class="jumbotron">
+- Industry Partners: Biogen, EMD Serono, Roche Genentech, Novartis, TG Therapeutics
+- National Multiple Sclerosis Society (NMSS)
+- Women’s Brain Health Rounds
+- International Women in Multiple Sclerosis (iWIMS)
+- CONSORTIUM OF MS CENTERS
+</div>
+
+<br>
+
+## Future Support
+
+<div class="jumbotron">
+To ensure the sustainability and growth of our collaborative efforts, we are committed to pursuing diverse funding opportunities that align with our mission. Our goal is to secure financial support that allows us to expand research initiatives, support young investigators, and enhance infrastructure for collaboration.
+
+We plan to apply for grants from national and international funding agencies focused on neuroimmunology, women’s health, and healthcare disparities. By leveraging our established network and track record of impactful research, we aim to present compelling proposals that highlight our unique collaborative model and its potential for advancing knowledge and improving clinical outcomes.
+
+In addition to government grants, we will seek partnerships with industry sponsors, foundations, and philanthropic organizations that share our commitment to advancing women’s health in neuroimmunological diseases. These partnerships will enable us to pursue high-impact studies, develop new technologies, and support initiatives such as biosample collection, neuroimaging, and disparities research.
+
+We also plan to establish a structured mentorship and training program for young investigators within our network, with dedicated funding to support their projects and professional development. This will create a pipeline of skilled researchers prepared to lead the next generation of discoveries in neuroimmunology.
+By securing a diverse array of funding sources, we aim to ensure that our network continues to thrive, innovate, and expand, ultimately improving health outcomes for women affected by neuroimmunological diseases.
 </div>
