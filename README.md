@@ -16,7 +16,7 @@ Some users:
 <a href="https://adisun94.github.io/" target="_blank">★</a>
 <a href="https://comp-physics.group" target="_blank">★</a>
 <a href="https://spike.doc.ic.ac.uk/" target="_blank">★</a>
-<a href="http://www.msc.univ-paris-diderot.fr/~berhanu/" target="_blank">★</a>
+<a href="https://www.msc.univ-paris-diderot.fr/~berhanu/" target="_blank">★</a>
 <a href="https://mashadab.github.io/" target="_blank">★</a>
 <a href="https://home.iitk.ac.in/~lalit/" target="_blank">★</a>
 <a href="https://ethan-pickering.github.io/" target="_blank">★</a>
