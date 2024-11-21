@@ -42,7 +42,7 @@ permalink: /involved/
 {% endif %}
 
 <div class="col-sm-3">
-<img src="{{ site.url }}{{ site.baseurl }}/images/{{ member.photo }}" width="100%" style="max-width:250px"/>
+<img src="../images/{{ member.photo }}" width="100%" style="max-width:250px"/>
   <h4>{{ member.name }}</h4>
   <i>{{ member.info }}<br></i>
 </div>

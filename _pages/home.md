@@ -7,7 +7,7 @@ permalink: /
 
 <div class="row">
 <div class="col-sm-2">
-<img src="{{ site.url }}{{ site.baseurl }}/images/newring-logo.jpg" width="90%" style="max-width:250px"/>
+<img src="../images/newring-logo.jpg" width="90%" style="max-width:250px"/>
 </div>
 
 <div class="col-sm-10">
@@ -19,7 +19,7 @@ permalink: /
 <!-- <div class="container">
 <div class="row"> -->
 <!-- <center> -->
-<!-- <img src="{{ site.url }}{{ site.baseurl }}/images/banner.jpg" width="100%"/><br/> -->
+<!-- <img src="../images/banner.jpg" width="100%"/><br/> -->
 <!-- </center> -->
 <!-- </div>
 </div> -->
