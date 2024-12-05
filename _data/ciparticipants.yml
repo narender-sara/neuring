@@ -1,0 +1,13 @@
+# - name: Example student name
+#   photo: ../assets/images/gen/participation/rock.jpg
+#   link:  Postdoc, started Oct 2040
+#   email: exampleemail@gmail.com
+#   website: "https://website.com
+
+- name: "Thomas Frederick McElrath"
+  photo: ../assets/images/gen/participation/thomas-frederick.jpg
+  link:  "https://physiciandirectory.brighamandwomens.org/details/1112/thomas-mcelrath-obstetrics_gynecology-boston-foxborough"
+  institution: "Maternal-Fetal Medicine, Mass General Brigham"
+  degree: "MD, PhD"
+  
+

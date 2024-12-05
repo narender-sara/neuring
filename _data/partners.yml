@@ -1,0 +1,27 @@
+# - name: Example student name
+#   photo: ../assets/images/gen/participation/rock.jpg
+#   link:  Postdoc, started Oct 2040
+#   email: exampleemail@gmail.com
+#   website: "https://website.com
+
+- name: "Industry Partners: Biogen, EMD Serono, Roche Genentech, Novartis, TG Therapeutics"
+  photo: 
+  link:  ""
+
+- name: "National Multiple Sclerosis Society (NMSS)"
+  photo: 
+  link:  "https://www.nationalmssociety.org/"
+
+- name: "Women’s Brain Health Rounds"
+  photo: 
+  link:  "https://deptmedicine.utoronto.ca/event/neurology-uoft-womens-brain-health-rounds-multiple-sclerosis-and-brain-aging"
+
+- name: "International Women in Multiple Sclerosis (iWIMS)"
+  photo: 
+  link:  "https://www.iwims.world/"
+
+- name: "Consortium of Multiple Sclerosis Centers: CMSC"
+  photo: 
+  link:  "https://www.mscare.org/"
+
+

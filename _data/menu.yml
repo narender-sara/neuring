@@ -1,0 +1,57 @@
+main:
+  - name: Home
+    url: /
+    weight: 1
+  - name: Network
+    url: /network/
+    weight: 2
+  - name: In The News
+    url: /inthenews/
+    weight: 3
+  - name: Connect with us
+    url: /connect/
+    weight: 4
+  
+
+# footer_primary:
+#   - name: "Participation"
+#     url: /projects/project-1/
+#   - name: "Project Layout 2"
+#     url: /projects/project-2/
+#   - name: "Project Layout 3"
+#     url: /projects/project-3/
+#   - name: "Project Layout 4"
+#     url: /projects/project-4/
+
+footer_secondary:
+  - name: Network
+    url: /network/
+    weight: 2
+  - name: In The News
+    url: /inthenews/
+    weight: 3
+  - name: Connect with us
+    url: /connect/
+    weight: 3
+  # - name: Privacy Policy
+  #   url: /privacy-policy/
+  #   weight: 1
+  # - name: Terms and Conditions
+  #   url: /terms-and-conditions/
+  #   weight: 2
+
+# footer_tertiary:
+#   - name: Privacy Policy
+#     url: /privacy-policy/
+#     weight: 1
+#   - name: Terms and Conditions
+#     url: /terms-and-conditions/
+#     weight: 2
+
+# bottom:
+#   - name: Privacy Policy
+#     url: /privacy-policy/
+#     weight: 3
+#   - name: Terms and Conditions
+#     url: /terms-and-conditions/
+#     weight: 4

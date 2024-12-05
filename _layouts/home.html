@@ -1,0 +1,128 @@
+---
+layout: default
+body_classes: page-home
+---
+
+<div class="section" style="padding-bottom:30px !important;">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        {% include framework/blocks/sections/heading.html
+        title=page.title
+        subdesc=page.subdesc
+        %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section" style="padding-top:20px !important;padding-bottom:30px !important;">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        {% include framework/blocks/sections/heading.html
+        subtitle=page.ms_title
+        ms_description=page.ms_description
+        %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section bg-base-bg-2" style="padding-top: 40px !important;">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        {% include framework/blocks/sections/whoweare.html
+        title=page.whoweare_title
+        desc_1=page.whoweare_desc_1
+        desc_2=page.whoweare_desc_2
+        desc_3=page.whoweare_desc_3
+        desc_4=page.whoweare_desc_4
+        %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% assign cards = site.posts %}
+{% if cards.size > 0 %}
+<div class="section" style="padding-top: 40px !important;">
+  <div class="container">
+    <div class="row">
+      {% include framework/blocks/sections/heading.html subtitle="Objectives" %}
+    
+      {% for card in cards limit: 4 %}
+
+      <div
+        class="col-12 col-md-6 mb-gutter mt-gutter {% if forloop.first %}mt-0{% endif %} {% if forloop.last %}mb-0{% endif %} mt-md-0">
+        {% include theme/cards/card-objective.html
+        title=card.title
+        gradient_style = card.gradient_style
+        desc_1=card.desc_1
+        desc_2=card.desc_2
+        desc_3=card.desc_3
+        desc_4=card.desc_4
+        desc_5=card.desc_5
+        url=card.url
+        %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endif %}
+
+<div class="section bg-base-bg-2" style="padding-top: 40px !important;">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        {% include framework/blocks/sections/background.html
+        title=page.background_title
+        description=page.background_desc
+        %}
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% assign cards = site.posts | sort: 'title' | reverse %}
+{% if cards.size > 0 %}
+<div class="section" style="padding-top: 40px !important;">
+  <div class="container">
+    <div class="row">
+      {% include framework/blocks/sections/heading.html subtitle="Conditions Studied" %}
+      <br /><br /><br /><br /><br />
+      {% for card in cards reversed limit: 3 %}
+      <div style="padding-left: 40px !important;"
+        class="col-12 col-md-12 mb-gutter mt-gutter {% if forloop.first %}mt-0{% endif %} {% if forloop.last %}mb-0{% endif %} mt-md-0">
+        {% include theme/cards/card-post.html
+        title=card.title
+        desc_1=card.desc_1
+        desc_2=card.desc_2
+        desc_3=card.desc_3
+        desc_4=card.desc_4
+        desc_5=card.desc_5
+        url=card.url
+        %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endif %}
+
+{% if site.mailchimp.form_action_url %}
+{% if page.subscribe %}
+  <div class="section bg-base-bg-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-12"></div>
+        {% include framework/blocks/components/subscribe.html %}
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}
+{% endif %}

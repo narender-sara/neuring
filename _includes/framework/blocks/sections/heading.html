@@ -1,0 +1,60 @@
+{% assign title = include.title %}
+{% assign subtitle = include.subtitle %}
+{% assign subdesc = include.subdesc %}
+{% assign ms_description = include.ms_description %}
+{% assign description = include.description %}
+{% assign image = include.image %}
+{% assign icon = include.icon %}
+{% assign fa_icon = include.fa_icon %}
+{% assign align = include.align | default: 'left' %}
+{% assign authors = include.authors %}
+{% assign date = include.date %}
+{% assign badge = include.badge %}
+
+<div class="heading">
+  {% if badge %}
+    <div class="heading-badge">
+      <span>{{ badge }}</span>
+    </div>
+  {% endif %}
+  
+  {% if title %}
+  <div class="heading-heading">
+    <h1>{{ title }}</h1>
+  </div>
+  {% endif %}
+
+  {% if subtitle %}
+  <br />
+  <div class="heading-sub-heading">
+    <h1>{{ subtitle }}</h1>
+  </div>
+  {% endif %}
+
+  {% if subdesc %}
+  <br />
+  <div class="heading-sub-description">
+    <p>{{ subdesc }}</p>
+  </div>
+  {% endif %}
+
+  {% if ms_description %}
+  <br />
+  <div class="heading-description" style="border: solid antiquewhite !important; width: 100% !important; padding: 10px;">
+    <p>{{ ms_description }}</p>
+  </div>
+  {% endif %}
+
+  {% if description %}
+  <br />
+    <div class="heading-description">
+      <p>{{ description }}</p>
+    </div>
+  {% endif %}
+
+  {% if image and image != "" %}
+    <div class="heading-image">
+      <img {% if title %} alt="{{ title }}" {% endif %} src="{{ image | relative_url }}"/>
+    </div>
+  {% endif %}
+</div>

@@ -1,0 +1,123 @@
+.card-project {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0;
+  background-color: var(--color-card-bg);
+  overflow: hidden;
+  position: relative;
+  border-radius: $card-border-radius;
+  .card-thumbnail {
+    border-radius: $card-border-radius;
+    overflow: hidden;
+    a {
+      display: block;
+    }
+    img {
+      aspect-ratio: 16 / 9;
+      width: 100%;
+      object-fit: contain;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+    &.card-thumbnail-large {
+      @include media-breakpoint-up(md) {
+        max-height: 260px;
+      }
+      @include media-breakpoint-up(xl) {
+        max-height: 300px;
+      }
+    }
+  }
+  .card-title {
+    h2,h3 {
+      font-weight: 500;
+      font-size: 20px;
+      letter-spacing: -0.2px;
+    }
+    a {
+      color: var(--color-base-text);
+    }
+  }
+  .card-description {
+    margin: 10px 0 10px 0;
+    p {
+      line-height: 1.3;
+      color: var(--color-base-text-2);
+      margin: 0;
+      font-weight: normal;
+    }
+  }
+  .card-title + .card-description {
+    margin-top: 0;
+  }
+  .card-client {
+    padding-top: 5px;
+    font-weight: 300;
+    font-size: 14px;
+    color: var(--color-base-text-2);
+  }
+  .card-content {
+    padding-top: 20px;
+    display: flex;
+    flex: 1;
+    text-align: center;
+    flex-direction: column;
+  }
+  .card-readmore {
+    margin-top: auto;
+    line-height: 1;
+    i {
+      margin-left: 5px;
+      margin-top: 4px;
+    }
+  }
+  .card-date {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: normal;
+    color: var(--color-base-text-2);
+    font-weight: normal;
+    font-size: 16px;
+  }
+  .card-categories {
+    display: inline-flex;
+    font-size: 12px;
+    font-family: $font-family-monospace;
+    > a {
+      background-color: var(--color-base-bg-2);
+      padding: 3px 7px;
+      border-radius: 2px;
+      margin-right: 10px;
+    }
+  }
+
+  .card-gradient-teal{
+    height: 400px;
+    background-color: #a6d0d9; /* For browsers that do not support gradients */
+    background-image: linear-gradient(#467f8e, #a6d0d9);    
+  }
+  .card-gradient-pink{
+    height: 400px;
+    background-color: #f798a1; /* For browsers that do not support gradients */
+    background-image: linear-gradient(#f798a1, #d5ecf9);    
+  }
+
+  .card-gradient-blue{
+    height: 400px;
+    background-color: #0083e9; /* For browsers that do not support gradients */
+    background-image: linear-gradient(#0083e9, #cfe4f5);    
+  }
+
+  .card-gradient-orange{
+    height: 400px;
+    background-color: #f37201; /* For browsers that do not support gradients */
+    background-image: linear-gradient(#f37201, #d2caba);    
+  }
+
+  // Tweaks for dark mode
+  html[data-mode="dark"] & {
+  }
+}

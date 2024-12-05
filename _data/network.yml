@@ -1,0 +1,110 @@
+# - name: Example student name
+#   photo: ../assets/images/gen/participation/rock.jpg
+#   link:  Postdoc, started Oct 2040
+#   email: exampleemail@gmail.com
+#   website: "https://website.com
+
+- name: "Riley Bove"
+  photo: ../assets/images/gen/participation/riley-bove.jpg
+  link:  "https://profiles.ucsf.edu/riley.bove"
+  institution: "UCSF"
+  degree: "MD"
+  
+
+- name: "Maria Houtchens"
+  photo: ../assets/images/gen/participation/maria-houtchens.jpg
+  link:  "https://physiciandirectory.brighamandwomens.org/details/920/maria-houtchens-neurology-boston"
+  institution: "Mass General Brigham"
+  degree: "MD"
+
+- name: "Dina Jacobs"
+  photo: ../assets/images/gen/participation/dina-jacobs.jpg
+  link:  "https://www.med.upenn.edu/apps/faculty/index.php/g324/p17492"
+  institution: "University of Pennsylvania"
+  degree: "MD"
+
+- name: "Anna Shah"
+  photo: ../assets/images/gen/participation/anna-shah.jpg
+  link:  "https://som.cuanschutz.edu/Profiles/Faculty/Profile/29575"
+  institution: "UC Anschutz"
+  degree: "MD"
+
+- name: "Annette Okai"
+  photo: ../assets/images/gen/participation/anette-okai.jpg
+  link:  "https://ntinh.com/staff/annette-okai-md/"
+  institution: "North Texas Institute of Neurology, Rheumatology & Headache"
+  degree: "MD"
+
+- name: "Annette Wundes"
+  photo: ../assets/images/gen/participation/annette-wundes.jpg
+  link:  "https://www.uwmedicine.org/bios/annette-wundes"
+  institution: "University of Washington"
+  degree: "MD"
+
+- name: "Claire Riley"
+  photo: ../assets/images/gen/participation/claire-riley.jpg
+  link:  "https://www.neurology.columbia.edu/profile/claire-s-riley-md"
+  institution: "Columbia University"
+  degree: "MD"
+
+- name: "Dessa Sadovnick "
+  photo: ../assets/images/gen/participation/dessa-sadovnick.jpg
+  link:  "https://medgen.med.ubc.ca/a-dessa-sadovnick/"
+  institution: "University of British Columbia"
+  degree: "MD"
+
+- name: "Edith Graham"
+  photo: ../assets/images/gen/participation/edith-graham.jpg
+  link:  "https://www.nm.org/doctors/1043668239/edith-l-graham-md"
+  institution: "Northwestern"
+  degree: "MD"
+
+- name: "Ilana Katz Sand"
+  photo: ../assets/images/gen/participation/ilana-sand.jpg
+  link:  "https://profiles.mountsinai.org/ilana-b-katz-sand"
+  institution: "Mount Sinai"
+  degree: "MD"
+
+- name: "Joanna Cooper"
+  photo: ../assets/images/gen/participation/joanna-cooper.jpeg
+  link:  "https://www.sutterhealth.org/find-doctor/dr-joanna-a-cooper"
+  institution: "Sutter Telegraph Neurology"
+  degree: "MD"
+
+- name: "Kerstin Hellwig"
+  photo: ../assets/images/gen/participation/kerstin-hellwig.jpg
+  link:  "https://www.rachelhorneprize.com/2024-winner"
+  institution: "Ruhr-Universität Bochum"
+  degree: "MD"
+
+- name: "Lilyana Amezcua"
+  photo: ../assets/images/gen/participation/lilyana-amezcua.jpeg
+  link:  "https://keck.usc.edu/faculty-search/lilyana-amezcua/"
+  institution: "University of Southern California"
+  degree: "MD"
+
+- name: "Mitzi Joy Williams"
+  photo: ../assets/images/gen/participation/mitzi-williams.jpg
+  link:  "https://joilifewellness.com/meet-the-team/"
+  institution: "JoiLife Wellness"
+  degree: "MD"
+
+- name: "Pavle Repovic"
+  photo: ../assets/images/gen/participation/pavle-repovic.jpeg
+  link:  "https://www.swedish.org/doctors/neurology/wa/seattle/pavle-repovic-1649437211"
+  institution: "Swedish Seattle"
+  degree: "MD, PhD"
+
+- name: "Sonia Kaur Singh"
+  photo: ../assets/images/gen/participation/sonia-kaur.webp
+  link:  "https://providers.muschealth.org/sc/charleston/sonia-kaur-singh-md-7320516243"
+  institution: "Medical University of South Carolina"
+  degree: "MD"
+
+- name: "Tiffany Braley"
+  photo: ../assets/images/gen/participation/tiffany-braley.png
+  link:  "https://medschool.umich.edu/profile/1267/tiffany-j-braley"
+  institution: "University of Michigan"
+  degree: "MD, MS"
+
+
