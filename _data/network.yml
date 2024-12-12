@@ -47,12 +47,6 @@
   institution: "Columbia University"
   degree: "MD"
 
-- name: "Dessa Sadovnick "
-  photo: ../assets/images/gen/participation/dessa-sadovnick.jpg
-  link:  "https://medgen.med.ubc.ca/a-dessa-sadovnick/"
-  institution: "University of British Columbia"
-  degree: "MD"
-
 - name: "Edith Graham"
   photo: ../assets/images/gen/participation/edith-graham.jpg
   link:  "https://www.nm.org/doctors/1043668239/edith-l-graham-md"
@@ -69,12 +63,6 @@
   photo: ../assets/images/gen/participation/joanna-cooper.jpeg
   link:  "https://www.sutterhealth.org/find-doctor/dr-joanna-a-cooper"
   institution: "Sutter Telegraph Neurology"
-  degree: "MD"
-
-- name: "Kerstin Hellwig"
-  photo: ../assets/images/gen/participation/kerstin-hellwig.jpg
-  link:  "https://www.rachelhorneprize.com/2024-winner"
-  institution: "Ruhr-Universität Bochum"
   degree: "MD"
 
 - name: "Lilyana Amezcua"

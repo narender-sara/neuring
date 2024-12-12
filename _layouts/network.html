@@ -83,6 +83,41 @@ body_classes: page-blog
 </div>
 {% endif %}
 
+<div class="section" style="padding-top: 20px; padding-bottom: 20px;">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 heading-sub-heading">
+        {% include framework/blocks/sections/heading.html
+        subtitle="International Collaborators"
+        description=page.description
+        %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% assign cards = site.data.international_col %}
+{% if cards.size > 0 %}
+<div class="section pt-0" style="padding-top: 20px; padding-bottom: 20px;">
+  <div class="container">
+    <div class="row">
+      {% for card in cards %}
+      <div style="padding-top: 40px;"
+        class="col-12 col-5-custom mb-gutter mt-gutter {% if forloop.first %}mt-0{% endif %} {% if forloop.last %}mb-0{% endif %} mt-md-0">
+        {% include theme/cards/card-network.html
+        title=card.name
+        thumbnail=card.photo
+        degree=card.degree
+        email=card.email
+        institution=card.institution
+        profile_link=card.link
+        %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endif %}
 
 <div class="section" style="padding-top: 20px; padding-bottom: 20px;">
   <div class="container">

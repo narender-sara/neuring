@@ -1,0 +1,17 @@
+# - name: Example student name
+#   photo: ../assets/images/gen/participation/rock.jpg
+#   link:  Postdoc, started Oct 2040
+#   email: exampleemail@gmail.com
+#   website: "https://website.com
+
+- name: "Dessa Sadovnick "
+  photo: ../assets/images/gen/participation/dessa-sadovnick.jpg
+  link:  "https://medgen.med.ubc.ca/a-dessa-sadovnick/"
+  institution: "University of British Columbia"
+  degree: "MD"
+  
+- name: "Kerstin Hellwig"
+  photo: ../assets/images/gen/participation/kerstin-hellwig.jpg
+  link:  "https://www.rachelhorneprize.com/2024-winner"
+  institution: "Ruhr-Universität Bochum"
+  degree: "MD"
