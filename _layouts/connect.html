@@ -3,14 +3,31 @@ layout: default
 body_classes: page-contact
 ---
 <style>
-      img {
-      aspect-ratio: 16 / 9;
-      width: 100%;
-      object-fit: contain;
-      &:hover {
-        opacity: 0.8;
-      }
+  img {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    object-fit: contain;
+    transition: opacity 0.3s ease; /* Smooth opacity change */
+  }
+
+  img:hover {
+    opacity: 0.8;
+  }
+
+    /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .col-4, .col-8 {
+      flex: 0 0 100%;
+      max-width: 100%;
     }
+
+    .container > .row {
+      flex-direction: column;
+    }
+    .heading-description, .heading-sub-description {
+          padding-left: 5px !important;
+    }
+  }
 </style>
 <div class="section">
   <div class="container">
@@ -28,7 +45,7 @@ body_classes: page-contact
 <div class="container">
   <div class="row justify-content-center">
     <div class="col-4">
-      <img src="../assets/images/gen/connect/join-conversation.jpg">
+      <img src="../assets/images/gen/connect/join-conversation.jpg" alt="Join Conversation">
     </div>
     <div class="col-8">
       <div class="heading-sub-heading">
@@ -48,7 +65,7 @@ body_classes: page-contact
   <br />
   <div class="row justify-content-center">
     <div class="col-4">
-      <img src="../assets/images/gen/connect/join-collaboration.jpg">
+      <img src="../assets/images/gen/connect/join-collaboration.jpg" alt="Join Collaboration">
     </div>
     <div class="col-8">
       <div class="heading-sub-heading">
@@ -71,7 +88,7 @@ body_classes: page-contact
   <br />
   <div class="row justify-content-center">
     <div class="col-4">
-      <img src="../assets/images/gen/connect/leadtheproject.jpg">
+      <img src="../assets/images/gen/connect/leadtheproject.jpg" alt="Lead the Project">
     </div>
     <div class="col-8">
       <div class="heading-sub-heading">

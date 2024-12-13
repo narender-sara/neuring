@@ -8,6 +8,28 @@ body_classes: page-blog
       flex: 0 0 auto;
       width: 20%;
   }
+
+  /* Mobile Styles */
+@media (max-width: 767.98px) {
+     .col-5-custom {
+          width: 100%; /* Full width on mobile */
+        }
+      }
+
+  /* iPad Styles (Portrait) */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    .col-5-custom {
+          width: 50%; /* Full width on mobile */
+        }
+  }
+
+  /* iPad and Surface Pro Styles (Landscape) */
+  @media (min-width: 1025px) and (max-width: 1366px) and (orientation: landscape) {
+    .col-5-custom {
+          width: 25%; /* Full width on mobile */
+        }
+
+  }
 </style>
 
 <div class="section"  style="padding-top: 20px; padding-bottom: 20px;">
