@@ -104,13 +104,15 @@
 }
 
 .whoweare {
-  >div {
-    padding: 14px 0 14px 0;
-
-    @include media-breakpoint-up(md) {
-      padding: 30px 20px 30px 20px;
+  padding: 14px 0;
+  
+  /*This is to overwrite the padding for large screens only*/
+  @include media-breakpoint-up(md) {
+      padding: 30px 20px;
     }
-  }
+
+  display: flex;
+  flex-wrap: wrap;
 
   a {
     display: inline-block;
@@ -120,58 +122,63 @@
     font-weight: 600;
   }
 
-  height: 400px;
-
   .whoweare-desc {
-    font-size: xx-large;
+    font-size: x-large; /* Adjusted font size */
     border: solid darkolivegreen;
     border-width: 0.3em;
+    box-sizing: border-box;
+    padding: 10px;
+    flex: 1 1 100%; /*Take up 100% of space */
+    margin: 5px;
   }
 
-  .wwa-first {
-    float: left;
-    width: 50%;
-    height: 60%;
+  /* Medium and larger screens */
+  @media (min-width: 768px) {
+     .whoweare-desc {
+          flex: 1 1 50%;/*Take up 50% of space */
+          
+      }
   }
 
-  .wwa-second {
-    float: left;
-    width: 50%;
-    height: 40%;
+  /* Specific order with flex-order for medium and larger screens */
+    @media (min-width: 768px){
+        .wwa-first {
+            order: 1;
+        }
 
-  }
+        .wwa-second {
+            order: 4;
+        }
 
-  .wwa-third {
-    float:right;
-    width: 50%;
-    height: 40%;
-  }
+        .wwa-third {
+            order: 2;
+        }
 
-  .wwa-fourth {
-    float: right;
-    width: 50%;
-    height: 60%;
-  }
+        .wwa-fourth {
+            order: 3;
+        }
+    }
+
 }
 
 .background {
-  >div {
-    padding: 14px 0 14px 0;
+    >div {
+      padding: 14px 0 14px 0;
 
-    @include media-breakpoint-up(md) {
-      padding: 10px 0 10px 0;
+      @include media-breakpoint-up(md) {
+        padding: 10px 0 10px 0;
+      }
+    }
+
+    a {
+      display: inline-block;
+    }
+
+    strong {
+      font-weight: 600;
+    }
+
+    .background-desc {
+      padding-left: 20px;
     }
   }
-
-  a {
-    display: inline-block;
-  }
-
-  strong {
-    font-weight: 600;
-  }
-
-  .background-desc {
-    padding-left: 20px;
-  }
-}
