@@ -103,16 +103,56 @@
   }
 }
 
-.whoweare {
-  padding: 14px 0;
-  
-  /*This is to overwrite the padding for large screens only*/
-  @include media-breakpoint-up(md) {
-      padding: 30px 20px;
-    }
+// .whoweare {
+//   >div {
+//     padding: 14px 0 14px 0;
+//     @include media-breakpoint-up(md) {
+//       padding: 30px 20px 30px 20px;
+//     }
+//   }
+//   a {
+//     display: inline-block;
+//   }
+//   strong {
+//     font-weight: 600;
+//   }
+//   height: 400px;
+//   .whoweare-desc {
+//     font-size: xx-large;
+//     border: solid darkolivegreen;
+//     border-width: 0.3em;
+//   }
+//   .wwa-first {
+//     float: left;
+//     width: 50%;
+//     height: 60%;
+//   }
+//   .wwa-second {
+//     float: left;
+//     width: 50%;
+//     height: 40%;
+//   }
+//   .wwa-third {
+//     float:right;
+//     width: 50%;
+//     height: 40%;
+//   }
+//   .wwa-fourth {
+//     float: right;
+//     width: 50%;
+//     height: 60%;
+//   }
+// }
 
-  display: flex;
-  flex-wrap: wrap;
+
+.whoweare {
+  >div {
+    padding: 14px 0 14px 0;
+
+    @include media-breakpoint-up(md) {
+      padding: 30px 20px 30px 20px;
+    }
+  }
 
   a {
     display: inline-block;
@@ -122,63 +162,238 @@
     font-weight: 600;
   }
 
+  height: 400px;
+
   .whoweare-desc {
-    font-size: x-large; /* Adjusted font size */
+    font-size: xx-large;
     border: solid darkolivegreen;
     border-width: 0.3em;
+    display: flex;
+    /*Ensures the correct spacing for images and text */
+    align-items: center;
+    gap: 10px;
     box-sizing: border-box;
     padding: 10px;
-    flex: 1 1 100%; /*Take up 100% of space */
-    margin: 5px;
   }
 
-  /* Medium and larger screens */
-  @media (min-width: 768px) {
-     .whoweare-desc {
-          flex: 1 1 50%;/*Take up 50% of space */
-          
-      }
+  .whoweare-desc img {
+    max-width: 80px;
+    max-height: 80px;
+    display: inline-block;
   }
 
-  /* Specific order with flex-order for medium and larger screens */
-    @media (min-width: 768px){
-        .wwa-first {
-            order: 1;
-        }
+  // .wwa-first {
+  //   float: left;
+  //   width: 50%;
+  //   height: 60%;
+  // }
 
-        .wwa-second {
-            order: 4;
-        }
+  // .wwa-second {
+  //   float: left;
+  //   width: 50%;
+  //   height: 40%;
+  // }
 
-        .wwa-third {
-            order: 2;
-        }
+  // .wwa-third {
+  //   float: right;
+  //   width: 50%;
+  //   height: 40%;
+  // }
 
-        .wwa-fourth {
-            order: 3;
-        }
+  // .wwa-fourth {
+  //   float: right;
+  //   width: 50%;
+  //   height: 60%;
+  // }
+
+  /* Mobile Styles */
+  @media (max-width: 767.98px) {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    /*Reset the height to be dynamic*/
+
+    .whoweare-desc {
+      flex: 1 1 100%;
+      font-size: x-large;
+      /* Adjusted font size for mobile */
+      margin: 5px;
+      float: none;
+      width: auto;
+      height: auto;
     }
 
+  }
+
+  /* iPad Styles (Portrait) */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    display: flex;
+    /* Use Flexbox */
+    flex-wrap: wrap;
+    height: auto;
+
+    .whoweare-desc {
+      flex: 1 1 50%;
+      font-size: x-large;
+      float: none;
+      width: auto;
+      height: auto;
+    }
+  }
+
+  /* iPad and Surface Pro Styles (Landscape) */
+  @media (min-width: 1025px) and (max-width: 1366px) and (orientation: landscape) {
+    display: flex;
+    /* Use Flexbox */
+    flex-wrap: wrap;
+    height: auto;
+
+    .whoweare-desc {
+      flex: 1 1 50%;
+      font-size: x-large;
+      float: none;
+      width: auto;
+      height: auto;
+    }
+
+  }
+
+  /* larger screens flex order */
+  @media (min-width: 1367px) {
+    display: block;
+
+    /*Set to block for Desktop Design*/
+    .whoweare-desc {
+      float: none;
+      width: auto;
+      height: auto;
+    }
+
+    .wwa-first {
+      order: 1;
+      float: left;
+      width: 50%;
+      height: 60%;
+    }
+
+    .wwa-second {
+      order: 4;
+      float: left;
+      width: 50%;
+      height: 40%;
+    }
+
+    .wwa-third {
+      order: 2;
+      float: right;
+      width: 50%;
+      height: 40%;
+    }
+
+    .wwa-fourth {
+      order: 3;
+      float: right;
+      width: 50%;
+      height: 60%;
+    }
+  }
 }
 
+// .whoweare {
+//   padding: 14px 0;
+
+//   /*This is to overwrite the padding for large screens only*/
+//   @include media-breakpoint-up(md) {
+//       padding: 30px 20px;
+//     }
+
+//   display: flex;
+//   flex-wrap: wrap;
+
+//   a {
+//     display: inline-block;
+//   }
+
+//   strong {
+//     font-weight: 600;
+//   }
+
+//   .whoweare-desc {
+//     font-size: x-large; /* Adjusted font size */
+//     border: solid darkolivegreen;
+//     border-width: 0.3em;
+//     box-sizing: border-box;
+//     padding: 10px;
+//     flex: 1 1 100%; /*Take up 100% of space */
+//     margin: 5px;
+//   }
+
+//   /* Medium and larger screens */
+//   @media (min-width: 768px) {
+//      .whoweare-desc {
+//           flex: 1 1 50%;/*Take up 50% of space */
+//       }
+//       .wwa-first {
+//         float: left;
+//         width: 50%;
+//         height: 60%;
+//       }
+//       .wwa-second {
+//         float: left;
+//         width: 50%;
+//         height: 40%;
+//       }
+//       .wwa-third {
+//         float:right;
+//         width: 50%;
+//         height: 40%;
+//       }
+//       .wwa-fourth {
+//         float: right;
+//         width: 50%;
+//         height: 60%;
+//       }
+//   }
+
+//   /* Specific order with flex-order for medium and larger screens */
+//     @media (max-width: 768px){
+//         .wwa-first {
+//             order: 1;
+//         }
+
+//         .wwa-second {
+//             order: 4;
+//         }
+
+//         .wwa-third {
+//             order: 2;
+//         }
+
+//         .wwa-fourth {
+//             order: 3;
+//         }
+//     }
+
+// }
+
 .background {
-    >div {
-      padding: 14px 0 14px 0;
+  >div {
+    padding: 14px 0 14px 0;
 
-      @include media-breakpoint-up(md) {
-        padding: 10px 0 10px 0;
-      }
-    }
-
-    a {
-      display: inline-block;
-    }
-
-    strong {
-      font-weight: 600;
-    }
-
-    .background-desc {
-      padding-left: 20px;
+    @include media-breakpoint-up(md) {
+      padding: 10px 0 10px 0;
     }
   }
+
+  a {
+    display: inline-block;
+  }
+
+  strong {
+    font-weight: 600;
+  }
+
+  .background-desc {
+    padding-left: 20px;
+  }
+}
