@@ -76,7 +76,7 @@ body_classes: page-contact
   function displayUpcomingMeetingDate() {
       const upcomingMeetingDate = getNextFourthThursday();
       const options = { year: 'numeric', month: 'long', day: 'numeric' };
-      document.getElementById('meeting-date').textContent = upcomingMeetingDate.toLocaleDateString(undefined, options);
+      document.getElementById('meeting-date').textContent = upcomingMeetingDate.toLocaleDateString(undefined, options) + " - 12 to 1PM EST";
   }
 
   window.onload = displayUpcomingMeetingDate;
@@ -100,7 +100,7 @@ body_classes: page-contact
           discussed.<br /><br />
 
           <b>Upcoming Meeting Date</b>
-          <p style="padding-top: 5px;" id="meeting-date"></p><p>- 12 to 1PM EST</p>
+          <p style="padding-top: 5px;" id="meeting-date"></p>
           <br />
           Please join us via zoom at <a style="color: #0000EE;"
             href="https://ucsf.zoom.us/my/rileybove">https://ucsf.zoom.us/my/rileybove</a> </p>
