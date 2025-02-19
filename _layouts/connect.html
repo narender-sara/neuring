@@ -41,6 +41,46 @@ body_classes: page-contact
   </div>
 </div>
 
+<script>
+  function getFourthThursday(year, month) {
+      // Start from the 1st day of the month
+      let date = new Date(year, month, 1);
+      let dayOfWeek = date.getDay();
+      // Calculate the day of the month for the first Thursday
+      let firstThursday = 1 + (4 + 7 - dayOfWeek) % 7;
+      // Calculate the day of the month for the fourth Thursday
+      let fourthThursday = firstThursday + 3 * 7;
+      return new Date(year, month, fourthThursday);
+  }
+
+  function getNextFourthThursday() {
+      const today = new Date();
+      let year = today.getFullYear();
+      let month = today.getMonth();
+      let fourthThursday = getFourthThursday(year, month);
+
+      // Check if the calculated fourth Thursday has already passed this month
+      if (today > fourthThursday) {
+          // Move to the next month
+          month++;
+          if (month > 11) {
+              month = 0;
+              year++;
+          }
+          fourthThursday = getFourthThursday(year, month);
+      }
+
+      return fourthThursday;
+  }
+
+  function displayUpcomingMeetingDate() {
+      const upcomingMeetingDate = getNextFourthThursday();
+      const options = { year: 'numeric', month: 'long', day: 'numeric' };
+      document.getElementById('meeting-date').textContent = upcomingMeetingDate.toLocaleDateString(undefined, options);
+  }
+
+  window.onload = displayUpcomingMeetingDate;
+</script>
 
 <div class="container">
   <div class="row justify-content-center">
@@ -54,10 +94,16 @@ body_classes: page-contact
 
       <br />
       <div class="heading-description" style="padding-left: 20px;">
-        <p>All are welcome to attend the monthly meeting on the second Tuesday of
-          the month, 9am PT – noon EST. During this meeting, projects proposals, progress and dissemination are
-          discussed.<br /><br />Please join us via zoom at <a
-            href="https://ucsf.zoom.us/j/8378002473">https://ucsf.zoom.us/j/8378002473</a> </p>
+        <p>All are welcome to attend the monthly meeting<br />
+          It is on the fourth Thursday of every month from 12 to 1PM EST. <br />
+          During this meeting, project proposals, progress and dissemination are
+          discussed.<br /><br />
+
+          <b>Upcoming Meeting Date</b>
+          <p id="meeting-date"></p><p>12 to 1PM EST</p>
+          <br />
+          Please join us via zoom at <a style="color: #0000EE;"
+            href="https://ucsf.zoom.us/my/rileybove">https://ucsf.zoom.us/my/rileybove</a> </p>
       </div>
     </div>
   </div>
