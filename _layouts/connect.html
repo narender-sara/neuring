@@ -76,7 +76,7 @@ body_classes: page-contact
   function displayUpcomingMeetingDate() {
       const upcomingMeetingDate = getNextFourthThursday();
       const options = { year: 'numeric', month: 'long', day: 'numeric' };
-      document.getElementById('meeting-date').textContent = upcomingMeetingDate.toLocaleDateString(undefined, options) + " - 12 to 1PM EST";
+      document.getElementById('meeting-date').textContent = upcomingMeetingDate.toLocaleDateString(undefined, options) + " - 12 to 1 PM EST";
   }
 
   window.onload = displayUpcomingMeetingDate;
@@ -95,7 +95,7 @@ body_classes: page-contact
       <br />
       <div class="heading-description" style="padding-left: 20px;">
         <p>All are welcome to attend the monthly meeting.<br />
-          It is on the fourth Thursday from 12 to 1PM EST every month. <br />
+          It is on the fourth Thursday from 12 to 1 PM EST every month. <br />
           Project proposals, progress, and dissemination will be discussed during this meeting.<br /><br />
                   
           <b>Upcoming Meeting Date</b>

@@ -1,5 +1,5 @@
 ---
 layout: network
-title: Participating Institutions and Representatives
+title: Participating Institutions and MS Specialists
 permalink: "/network/"
 ---
