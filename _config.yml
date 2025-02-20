@@ -116,12 +116,7 @@ logo:
   show_logo_image_on_desktop: true
   show_logo_text_on_mobile: false
   show_logo_text_on_desktop: false
-  
-seo:
-  meta_opengraph_type: "website"
-  meta_twitter_card: "summary"
-  meta_twitter_site: "@zerostaticio"
-  meta_twitter_creator: "@zerostaticio"
+
 
 header: 
   fixed: false
@@ -137,9 +132,6 @@ analytics:
 
 disqus:
   shortname: "" # Your disqus shortcode. leave this blank to disable comments globally
-
-mailchimp:
-  form_action_url: https://zerostatic.us13.list-manage.com/subscribe/post?u=675276692aebec1c007f8156d&amp;id=3e3da720c2
 
 contact_form: 
   use_netlify_form: false
@@ -167,5 +159,4 @@ footer:
 bottom:
   enable_bottom: false # show/hide the entire bottom (below the footer)
   enable_bottom_menu: false # if enabled, the bottom menu can be edited in `_data/menu.yml`
-  copyright_text: "© 2021 Zerostatic Themes"
 

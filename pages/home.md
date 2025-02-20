@@ -1,14 +1,14 @@
 ---
 layout: home
 permalink: "/"
-title: "<strong>NEU-RING.</strong>"
+title: "<strong>NEU-RING</strong>"
 subtitle: ""
 subdesc: "NEUrologists advancing Women’s health, Reproduction and Innovation Group"
 description: ""
 meta_description: ""
 meta_title: ""
 ms_title: "Mission Statement"
-ms_description: "To galvanize advances in women’s health research in neuroimmunological diseases through adaptive, flexible, national, and international collaborations."
+ms_description: "To galvanize advances in women’s health research in neuroimmunological diseases through adaptive, flexible, national, and international collaborations in MS, NMOSD and MOG"
 whoweare_title: "Who We Are"
 whoweare_desc_1: "Diverse network of individuals across academic institutions and private MS clinics with a decade of experience in collaborative research."
 whoweare_desc_2: "Track record of high-impact collaborative publications."

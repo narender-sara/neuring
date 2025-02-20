@@ -1,0 +1,16 @@
+# - title: Example publication title
+#   link:  link of the publication
+
+- title: "Management of Childbearing in MS"
+  linktitle1: "Family planning considerations in people with multiple sclerosis"
+  link1:  "https://pubmed.ncbi.nlm.nih.gov/36931808/"
+  linktitle2: "Practical Considerations for Managing Pregnancy in Patients With Multiple Sclerosis: Dispelling the Myths"
+  link2:  "https://pubmed.ncbi.nlm.nih.gov/38585436/"
+
+- title: "Lactation in MS"
+  linktitle1: "Topical review: Lactation and use of DMTs in women with MS"
+  link1:  "https://pubmed.ncbi.nlm.nih.gov/39348090/"  
+
+- title: "B-Cell Depletion in MS"
+  linktitle1: "Use of B-Cell-Depleting Therapy in Women of Childbearing Potential With Multiple Sclerosis and Neuromyelitis Optica Spectrum Disorder"
+  link1:  "https://pubmed.ncbi.nlm.nih.gov/35733945"

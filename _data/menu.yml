@@ -5,12 +5,15 @@ main:
   - name: Network
     url: /network/
     weight: 2
-  - name: In The News
-    url: /inthenews/
+  - name: Ongoing Research
+    url: /ongoingresearch/
     weight: 3
+  - name: Recent Guidelines & Findings
+    url: /recentguidelines/
+    weight: 4
   - name: Connect with us
     url: /connect/
-    weight: 4
+    weight: 5
   
 
 # footer_primary:
@@ -27,12 +30,15 @@ footer_secondary:
   - name: Network
     url: /network/
     weight: 2
-  - name: In The News
-    url: /inthenews/
+  - name: Ongoing Research
+    url: /ongoingresearch/
     weight: 3
+  - name: Recent Guidelines & Findings
+    url: /recentguidelines/
+    weight: 4
   - name: Connect with us
     url: /connect/
-    weight: 3
+    weight: 5
   # - name: Privacy Policy
   #   url: /privacy-policy/
   #   weight: 1

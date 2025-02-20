@@ -1,0 +1,123 @@
+---
+layout: default
+body_classes: page-blog
+---
+
+<style>
+  .col-5-custom {
+    flex: 0 0 auto;
+    width: 20%;
+  }
+
+  /* Mobile Styles */
+  @media (max-width: 767.98px) {
+    .col-5-custom {
+      width: 100%;
+      /* Full width on mobile */
+    }
+  }
+
+  /* iPad Styles (Portrait) */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    .col-5-custom {
+      width: 50%;
+      /* Full width on mobile */
+    }
+  }
+
+  /* iPad and Surface Pro Styles (Landscape) */
+  @media (min-width: 1025px) and (max-width: 1366px) and (orientation: landscape) {
+    .col-5-custom {
+      width: 25%;
+      /* Full width on mobile */
+    }
+
+  }
+
+  .bullet-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .bullet {
+    flex: 0 0 auto;
+    /* Fixed size for the bullet column */
+    margin-right: 10px;
+    /* Space between bullet and content */
+  }
+
+  .content-check {
+    flex: 1;
+    /* Takes up the remaining space */
+  }
+</style>
+
+<div class="section" style="padding-top: 20px; padding-bottom: 60px;">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 heading-sub-heading">
+        {% include framework/blocks/sections/heading.html
+        subtitle=page.title
+        description=page.description
+        %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% assign pubs = site.data.recentguidelines %}
+{% if pubs.size > 0 %}
+<div class="section pt-0" style="padding-top: 20px; padding-bottom: 20px;">
+  <div class="container">
+    <div class="row" style="padding-left: 20px;">
+      {% for pub in pubs %}
+      <div class="col-12 col-md-12 col-lg-10 mb-3">
+        <div class="card card-post card-row card-has-thumbnail ">
+          <div class="card-content">
+
+            <div class="card-title" style="padding-bottom: 20px;">
+              <h3>
+                {{pub.title}}
+              </h3>
+            </div>
+            {% if {{pub.link1}} %}
+            {% assign first_char = pub.link1 | slice: 0, 1 %}
+            <div class="bullet-container mb-2" style="padding-left: 20px;">
+              <div class="bullet">•</div>
+              <div class="content-check card-description" style="padding-left: 20px;">
+                <a href="{{pub.link1}}"
+                  target="{% if first_char == '/' %}_self{% else %}_blank{% endif %}">{{pub.linktitle1}}</a>
+              </div>
+            </div>
+            {% endif %}
+
+            {% if {{pub.link2}} %}
+            {% assign first_char = pub.link2 | slice: 0, 1 %}
+            <div class="bullet-container mb-2" style="padding-left: 20px;">
+              <div class="bullet">•</div>
+              <div class="content-check card-description" style="padding-left: 20px;">
+                <a href="{{pub.link2}}"
+                  target="{% if first_char == '/' %}_self{% else %}_blank{% endif %}">{{pub.linktitle2}}</a>
+              </div>
+            </div>
+            {% endif %}
+
+            {% if {{pub.link3}} %}
+            {% assign first_char = pub.link3 | slice: 0, 1 %}
+            <div class="bullet-container mb-2" style="padding-left: 20px;">
+              <div class="bullet">•</div>
+              <div class="content-check card-description" style="padding-left: 20px;">
+                <a href="{{pub.link3}}"
+                  target="{% if first_char == '/' %}_self{% else %}_blank{% endif %}">{{pub.linktitle3}}</a>
+              </div>
+            </div>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endif %}
