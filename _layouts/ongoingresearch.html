@@ -80,7 +80,7 @@ body_classes: page-blog
               </h3>
             </div>
 
-            {% if {{pub.link1}} %}
+            {% if pub.link1 %}
             {% assign first_char = pub.link1 | slice: 0, 1 %}
             <div class="bullet-container mb-2" style="padding-left: 20px;">
               <div class="bullet">•</div>
@@ -91,7 +91,7 @@ body_classes: page-blog
             </div>
             {% endif %}
 
-            {% if {{pub.link2}} %}
+            {% if pub.link2 %}
             {% assign first_char = pub.link2 | slice: 0, 1 %}
             <div class="bullet-container mb-2" style="padding-left: 20px;">
               <div class="bullet">•</div>
@@ -102,7 +102,7 @@ body_classes: page-blog
             </div>
             {% endif %}
 
-            {% if {{pub.link3}} %}
+            {% if pub.link3 %}
             {% assign first_char = pub.link3 | slice: 0, 1 %}
             <div class="bullet-container mb-2" style="padding-left: 20px;">
               <div class="bullet">•</div>
