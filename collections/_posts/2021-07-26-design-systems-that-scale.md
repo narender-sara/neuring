@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Advance Health Equity by Addressing Disparities in Neuroimmunological Disease Outcomes"
+title: "Advance Health Equity by Addressing Disparities in Women's Neuroimmunological Disease Outcomes"
 date: 2022-03-11T16:49:03Z
 authors: []
 categories: []

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Collaborate on industry-sponsored studies to enhance <br /> the quality   and breadth of diagnostic and therapeutic tools."
+title: "Collaborate on industry-sponsored studies to <br /> enhance the quality and breadth of diagnostic and <br />therapeutic tools with the focus on Women's Health."
 date: 2022-03-11T16:49:03Z
 authors: []
 categories: []

@@ -83,6 +83,18 @@
   institution: "Swedish Seattle"
   degree: "MD, PhD"
 
+- name: "Lindsay Ross"
+  photo: ../assets/images/gen/participation/lindsay-ross.jpg
+  link:  "https://my.clevelandclinic.org/staff/26990-lindsay-ross"
+  institution: "Cleveland Clinic"
+  degree: "MD"
+
+- name: "Sandra Vukusic"
+  photo: ../assets/images/gen/participation/sandra-vukusic.jpg
+  link:  "https://www.ectrims-congress.eu/fileadmin/files/2018/ectrims2018/Meet_the_Faculty/CV/Vukusic__Sandra.pdf"
+  institution: "Lyon University Hospital"
+  degree: "MD, PhD"
+
 - name: "Sonia Kaur Singh"
   photo: ../assets/images/gen/participation/sonia-kaur.webp
   link:  "https://providers.muschealth.org/sc/charleston/sonia-kaur-singh-md-7320516243"
