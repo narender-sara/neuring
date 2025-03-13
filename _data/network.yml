@@ -107,4 +107,9 @@
   institution: "University of Michigan"
   degree: "MD, MS"
 
+- name: "Zeydan Burcu"
+  photo: ../assets/images/gen/participation/zeydan-burcu.jpg
+  link:  "https://www.mayo.edu/research/faculty/zeydan-burcu-m-d/bio-20200696"
+  institution: "Mayo Clinic"
+  degree: "MD"
 
