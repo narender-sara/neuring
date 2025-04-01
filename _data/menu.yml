@@ -11,9 +11,12 @@ main:
   - name: Recent Guidelines & Findings
     url: /recentguidelines/
     weight: 4
+  - name: Group Collective Experience
+    url: /groupcollexp/
+    weight: 5
   - name: Connect with us
     url: /connect/
-    weight: 5
+    weight: 6
   
 
 # footer_primary:
@@ -36,9 +39,12 @@ footer_secondary:
   - name: Recent Guidelines & Findings
     url: /recentguidelines/
     weight: 4
+  - name: Group Collective Experience
+    url: /groupcollexp/
+    weight: 5
   - name: Connect with us
     url: /connect/
-    weight: 5
+    weight: 6
   # - name: Privacy Policy
   #   url: /privacy-policy/
   #   weight: 1
