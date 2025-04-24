@@ -1,6 +1,13 @@
 # - title: Example publication title
 #   link:  link of the publication
-
+- title: "Reassuring findings about fertility treatments and MS relapse risk"
+  linktitle1: "Inflammatory Activity After Diverse Fertility Treatments: A Multicenter Analysis in the Modern Multiple Sclerosis Treatment Era"
+  link1:  "https://pubmed.ncbi.nlm.nih.gov/36922025/"
+  
+- title: "Collaboration allowed us to examine pregnancy in women with higher disability levels"
+  linktitle1: "Peripartum disease activity in moderately and severely disabled women with multiple sclerosis"
+  link1:  "https://pubmed.ncbi.nlm.nih.gov/35734229/"
+  
 - title: "Management of Childbearing in MS"
   linktitle1: "Family planning considerations in people with multiple sclerosis"
   link1:  "https://pubmed.ncbi.nlm.nih.gov/36931808/"
@@ -14,3 +21,4 @@
 - title: "B-Cell Depletion in MS"
   linktitle1: "Use of B-Cell-Depleting Therapy in Women of Childbearing Potential With Multiple Sclerosis and Neuromyelitis Optica Spectrum Disorder"
   link1:  "https://pubmed.ncbi.nlm.nih.gov/35733945"
+  
