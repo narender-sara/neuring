@@ -55,7 +55,7 @@ body_classes: page-home
       {% for card in cards limit: 4 %}
 
       <div
-        class="col-12 col-md-6 mb-gutter mt-gutter {% if forloop.first %}mt-0{% endif %} {% if forloop.last %}mb-0{% endif %} mt-md-0">
+        class="col-12 col-md-6 {% if forloop.first %}mt-0{% endif %} {% if forloop.last %}mb-0{% endif %} mt-md-0">
         {% include theme/cards/card-objective.html
         title=card.title
         gradient_style = card.gradient_style

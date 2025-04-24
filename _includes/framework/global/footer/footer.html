@@ -5,7 +5,11 @@
         <div class="col-12 col-md-4">
           <div class="footer-info">
             {% if site.footer.footer_title and site.footer.footer_title != "" %}
-              <h2>{{ site.footer.footer_title }}</h2>
+              <!-- <h2>{{ site.footer.footer_title }}</h2> -->
+              <h2 style="display: flex; align-items: center;">
+                <strong>{{ site.footer.footer_title }}</strong>
+                <img src="/assets/images/logo/logo.png" id="footerImage" style="margin-left: 10px;">
+              </h2>
             {% endif %}
 
             {% if site.footer.footer_description and site.footer.footer_description != "" %}

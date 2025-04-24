@@ -1,5 +1,5 @@
 ---
 layout: recentguidelines
-title: Recent Guideline & Findings
+title: Recent Guidelines & Findings
 permalink: "/recentguidelines/"
 ---

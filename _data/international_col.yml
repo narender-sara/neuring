@@ -15,3 +15,15 @@
   link:  "https://www.rachelhorneprize.com/2024-winner"
   institution: "Ruhr-Universität Bochum"
   degree: "MD"
+
+- name: "Ruth Dobson"
+  photo: ../assets/images/gen/participation/ruth-dobson.png
+  link:  "https://www.qmul.ac.uk/wiph/people/profiles/dobson-ruth.html"
+  institution: "Wolfson Institute of Population Health"
+  degree: "PhD"
+
+- name: "Sandra Vukusic"
+  photo: ../assets/images/gen/participation/sandra-vukusic.jpg
+  link:  "https://www.ectrims-congress.eu/fileadmin/files/2018/ectrims2018/Meet_the_Faculty/CV/Vukusic__Sandra.pdf"
+  institution: "Lyon University Hospital"
+  degree: "MD, PhD"

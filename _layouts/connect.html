@@ -3,38 +3,68 @@ layout: default
 body_classes: page-contact
 ---
 <style>
+  #toggleButton {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+
+  #toggleButton:hover {
+    background-color: black;
+  }
+
+  #meetingDetails {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+  }
+
   img {
     aspect-ratio: 16 / 9;
     width: 100%;
     object-fit: contain;
-    transition: opacity 0.3s ease; /* Smooth opacity change */
+    transition: opacity 0.3s ease;
+    /* Smooth opacity change */
   }
 
   img:hover {
     opacity: 0.8;
   }
 
-    /* Media query for smaller screens */
+  /* Media query for smaller screens */
   @media (max-width: 768px) {
-    .col-4, .col-8 {
+
+    .col-4,
+    .col-8 {
       flex: 0 0 100%;
       max-width: 100%;
     }
 
-    .container > .row {
+    .container>.row {
       flex-direction: column;
     }
-    .heading-description, .heading-sub-description {
-          padding-left: 5px !important;
+
+    .heading-description,
+    .heading-sub-description {
+      padding-left: 5px !important;
     }
   }
 </style>
-<div class="section">
+<div class="section" style="padding-top: 20px; padding-bottom: 60px;">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-12">
         {% include framework/blocks/sections/heading.html
-        title=page.title
+          subtitle=page.title
         %}
       </div>
     </div>
@@ -43,43 +73,65 @@ body_classes: page-contact
 
 <script>
   function getFourthThursday(year, month) {
-      // Start from the 1st day of the month
-      let date = new Date(year, month, 1);
-      let dayOfWeek = date.getDay();
-      // Calculate the day of the month for the first Thursday
-      let firstThursday = 1 + (4 + 7 - dayOfWeek) % 7;
-      // Calculate the day of the month for the fourth Thursday
-      let fourthThursday = firstThursday + 3 * 7;
-      return new Date(year, month, fourthThursday);
+    // Start from the 1st day of the month
+    let date = new Date(year, month, 1);
+    let dayOfWeek = date.getDay();
+    // Calculate the day of the month for the first Thursday
+    let firstThursday = 1 + (4 + 7 - dayOfWeek) % 7;
+    // Calculate the day of the month for the fourth Thursday
+    let fourthThursday = firstThursday + 3 * 7;
+    return new Date(year, month, fourthThursday);
   }
 
   function getNextFourthThursday() {
-      const today = new Date();
-      let year = today.getFullYear();
-      let month = today.getMonth();
-      let fourthThursday = getFourthThursday(year, month);
+    const today = new Date();
+    let year = today.getFullYear();
+    let month = today.getMonth();
+    let fourthThursday = getFourthThursday(year, month);
 
-      // Check if the calculated fourth Thursday has already passed this month
-      if (today > fourthThursday) {
-          // Move to the next month
-          month++;
-          if (month > 11) {
-              month = 0;
-              year++;
-          }
-          fourthThursday = getFourthThursday(year, month);
+    //Wait until the day is over to calculate the next thursday
+    const nextDay = new Date(fourthThursday);
+    nextDay.setDate(fourthThursday.getDate() + 1);
+
+    // Check if the calculated fourth Thursday has already passed this month
+    if (today > nextDay) {
+      // Move to the next month
+      month++;
+      if (month > 11) {
+        month = 0;
+        year++;
       }
+      fourthThursday = getFourthThursday(year, month);
+    }
 
-      return fourthThursday;
+    return fourthThursday;
   }
 
+
   function displayUpcomingMeetingDate() {
-      const upcomingMeetingDate = getNextFourthThursday();
-      const options = { year: 'numeric', month: 'long', day: 'numeric' };
-      document.getElementById('meeting-date').textContent = upcomingMeetingDate.toLocaleDateString(undefined, options) + " - 12 to 1 PM EST";
+    debugger;
+    const upcomingMeetingDate = getNextFourthThursday();
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    document.getElementById('meeting-date').textContent = upcomingMeetingDate.toLocaleDateString(undefined, options) + " - 12 to 1 PM EST";
   }
 
   window.onload = displayUpcomingMeetingDate;
+
+  document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('toggleButton').addEventListener('click', function () {
+      var meetingDetails = document.getElementById('meetingDetails');
+      var toggleButton = document.getElementById('toggleButton');
+
+      if (meetingDetails.style.display === 'none') {
+        meetingDetails.style.display = 'block';
+        toggleButton.textContent = 'Hide Meeting Details';
+      } else {
+        meetingDetails.style.display = 'none';
+        toggleButton.textContent = 'Show Meeting Details';
+      }
+    });
+  });
+
 </script>
 
 <div class="container">
@@ -97,12 +149,55 @@ body_classes: page-contact
         <p>All are welcome to attend the monthly meeting.<br />
           It is on the fourth Thursday from 12 to 1 PM EST every month. <br />
           Project proposals, progress, and dissemination will be discussed during this meeting.<br /><br />
-                  
+
           <b>Upcoming Meeting Date</b>
-          <p style="padding-top: 5px;" id="meeting-date"></p>
-          <br />
-          Please join us via zoom at <a style="color: #0000EE;"
-            href="https://ucsf.zoom.us/my/rileybove">https://ucsf.zoom.us/my/rileybove</a> </p>
+        <p style="padding-top: 5px;" id="meeting-date"></p>
+        <br />
+        Please join us via zoom at
+        <br />
+        <a style="color: #0000EE;"
+          href="https://ucsf.zoom.us/j/97138357437?pwd=jLPzvhU5yveWQBlc5Hbq07ep61XZeK.1">https://ucsf.zoom.us/j/97138357437?pwd=jLPzvhU5yveWQBlc5Hbq07ep61XZeK.1</a>
+        </p>
+        <br />
+        <button id="toggleButton">Show Meeting Details</button>
+        <p id="meetingDetails" style="display: none;">
+          NEURING team is inviting you to a scheduled Zoom meeting.<br><br>
+          <strong>Topic:</strong> NEURING<br>
+          <strong>Time:</strong> This is a recurring meeting, meet anytime<br>
+          <strong>Meeting ID:</strong> 971 3835 7437<br>
+          <strong>Password:</strong> 205214<br>
+          <strong>Phone or Conference room password:</strong> 205214<br><br>
+          ---<br>
+          <strong>One Click Join from a PC, Mac, Linux, iOS or Android device:</strong><br>
+          <a
+            href="https://ucsf.zoom.us/j/97138357437?pwd=jLPzvhU5yveWQBlc5Hbq07ep61XZeK.1">https://ucsf.zoom.us/j/97138357437?pwd=jLPzvhU5yveWQBlc5Hbq07ep61XZeK.1</a><br>
+          ---<br>
+          <strong>One tap mobile (iPhone):</strong><br>
+          +12133388477,,97138357437#,,,,1#,,205214# US (Los Angeles)<br>
+          +16692192599,,97138357437#,,,,1#,,205214# US (San Jose)<br><br>
+          ---<br>
+          <strong>Dial by your location:</strong><br>
+          +1 213 338 8477 US (Los Angeles)<br>
+          +1 669 219 2599 US (San Jose)<br>
+          +1 669 900 6833 US (San Jose)<br>
+          000 800 050 5050 India Toll-free<br>
+          000 800 001 4002 India Toll-free<br>
+          +52 554 161 4288 Mexico<br>
+          800 062 2403 Mexico Toll-free<br>
+          <strong>Meeting ID:</strong> 971 3835 7437<br>
+          <strong>Password:</strong> 205214<br><br>
+          ---<br>
+          <strong>Connecting from a room system:</strong><br>
+          IP: 162.255.37.11<br>
+          SIP: 97138357437@zoomcrc.com<br>
+          <strong>Meeting ID:</strong> 971 3835 7437<br>
+          <strong>Password:</strong> 205214<br><br>
+          ---<br>
+          UCSF Zoom instance is approved for use with restricted data.<br><br>
+          For more information on Zoom:<br>
+          <a
+            href="https://it.ucsf.edu/services/zoom-web-conferencing">https://it.ucsf.edu/services/zoom-web-conferencing</a>
+        </p>
       </div>
     </div>
   </div>
@@ -169,7 +264,8 @@ body_classes: page-contact
         <br />
         <br />
         <div class="heading-description" style="padding-left: 25px;">
-          <p><b>Next Steps: </b>The advisory committee meets monthly to review submissions. We then engage with submitting investigators to
+          <p><b>Next Steps: </b>The advisory committee meets monthly to review submissions. We then engage with
+            submitting investigators to
             finetune agreements and ethical reviews as well as analytical strategy, and pool participating centers to
             facilitate collaborations.</p>
         </div>
