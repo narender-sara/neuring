@@ -141,29 +141,16 @@ body_classes: page-blog
 </div>
 {% endif %}
 
-<!-- <div class="section" style="padding-top: 20px; padding-bottom: 20px;">
+
+<div class="section" style="padding-bottom:30px !important;">
   <div class="container">
     <div class="row">
-      <div class="col-12 heading-sub-heading">
-        {% include framework/blocks/sections/heading.html
-        subtitle="Partners"
-        description=page.description
+      <div class="col-12">
+        {% include framework/blocks/sections/groupcollexp.html
+          title="Group Collective Experience"
+          description=page.description
         %}
       </div>
     </div>
   </div>
 </div>
-
-
-{% assign cards = site.data.partners %}
-{% if cards.size > 0 %}
-<div class="section pt-0" style="padding-top: 20px; padding-bottom: 20px;">
-  <div class="container">
-    <div class="row">
-      {% for card in cards %}
-      <p style="padding: 5px 10px 5px 40px;">{{card.name}}</p>
-      {% endfor %}
-    </div>
-  </div>
-</div>
-{% endif %} -->

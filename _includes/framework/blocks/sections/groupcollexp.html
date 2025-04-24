@@ -1,7 +1,5 @@
----
-layout: default
-body_classes: page-blog
----
+{% assign title = include.title %}
+{% assign description = include.description %}
 
 <style>
   .col-5-custom {
@@ -52,17 +50,15 @@ body_classes: page-blog
   }
 </style>
 
-<div class="section" style="padding-top: 20px; padding-bottom: 60px;">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 heading-sub-heading">
-        {% include framework/blocks/sections/heading.html
-        subtitle=page.title
-        description=page.description
-        %}
-      </div>
-    </div>
+<div class="heading">
+
+  {% if title %}
+  <div class="heading-sub-heading">
+    <h1>{{ title }}</h1>
   </div>
+  {% endif %}
+
+
 </div>
 
 {% assign pubs = site.data.groupcollexp %}

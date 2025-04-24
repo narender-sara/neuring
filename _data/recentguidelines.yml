@@ -1,18 +1,15 @@
 # - title: Example publication title
 #   link:  link of the publication
-- title: "Reassuring findings about fertility treatments and MS relapse risk"
-  linktitle1: "Inflammatory Activity After Diverse Fertility Treatments: A Multicenter Analysis in the Modern Multiple Sclerosis Treatment Era"
-  link1:  "https://pubmed.ncbi.nlm.nih.gov/36922025/"
-  
-- title: "Collaboration allowed us to examine pregnancy in women with higher disability levels"
-  linktitle1: "Peripartum disease activity in moderately and severely disabled women with multiple sclerosis"
-  link1:  "https://pubmed.ncbi.nlm.nih.gov/35734229/"
-  
+
 - title: "Management of Childbearing in MS"
   linktitle1: "Family planning considerations in people with multiple sclerosis"
   link1:  "https://pubmed.ncbi.nlm.nih.gov/36931808/"
   linktitle2: "Practical Considerations for Managing Pregnancy in Patients With Multiple Sclerosis: Dispelling the Myths"
   link2:  "https://pubmed.ncbi.nlm.nih.gov/38585436/"
+  linktitle3: "Reassuring findings about fertility treatments and MS relapse risk"
+  link3:  "https://pubmed.ncbi.nlm.nih.gov/36922025/"
+  linktitle4: "Collaboration allowed us to examine pregnancy in women with higher disability levels"
+  link4:  "https://pubmed.ncbi.nlm.nih.gov/35734229/"
 
 - title: "Lactation in MS"
   linktitle1: "Topical review: Lactation and use of DMTs in women with MS"

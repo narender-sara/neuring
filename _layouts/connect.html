@@ -89,12 +89,9 @@ body_classes: page-contact
     let month = today.getMonth();
     let fourthThursday = getFourthThursday(year, month);
 
-    //Wait until the day is over to calculate the next thursday
-    const nextDay = new Date(fourthThursday);
-    nextDay.setDate(fourthThursday.getDate() + 1);
-
+    fourthThursday.setUTCHours(14, 0, 0, 0);
     // Check if the calculated fourth Thursday has already passed this month
-    if (today > nextDay) {
+    if (today > fourthThursday) {
       // Move to the next month
       month++;
       if (month > 11) {
@@ -228,7 +225,7 @@ body_classes: page-contact
   <br />
   <div class="row justify-content-center">
     <div class="col-4">
-      <img src="../assets/images/gen/connect/leadtheproject.jpg" alt="Lead the Project">
+      <img src="../assets/images/gen/connect/leadtheproject.png" alt="Lead the Project">
     </div>
     <div class="col-8">
       <div class="heading-sub-heading">

@@ -112,6 +112,17 @@ body_classes: page-blog
               </div>
             </div>
             {% endif %}
+
+            {% if pub.link4 %}
+            {% assign first_char = pub.link4 | slice: 0, 1 %}
+            <div class="bullet-container mb-2" style="padding-left: 20px;">
+              <div class="bullet">•</div>
+              <div class="content-check card-description" style="padding-left: 20px;">
+                <a href="{{pub.link4}}"
+                  target="{% if first_char == '/' %}_self{% else %}_blank{% endif %}">{{pub.linktitle4}}</a>
+              </div>
+            </div>
+            {% endif %}
           </div>
         </div>
       </div>
