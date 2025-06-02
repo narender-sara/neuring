@@ -23,6 +23,12 @@
   institution: "University of Pennsylvania"
   degree: "MD"
 
+- name: "Alice R. Edwards"
+  photo: ../assets/images/gen/participation/alice-edwards.jpg
+  link:  "https://health.usnews.com/doctors/alice-edwards-1233548"
+  institution: "UCSF Benioff Children's Hospital Oakland"
+  degree: "DO"
+
 - name: "Anna Shah"
   photo: ../assets/images/gen/participation/anna-shah.jpg
   link:  "https://som.cuanschutz.edu/Profiles/Faculty/Profile/29575"
@@ -94,6 +100,13 @@
   link:  "https://providers.muschealth.org/sc/charleston/sonia-kaur-singh-md-7320516243"
   institution: "Medical University of South Carolina"
   degree: "MD"
+
+- name: "Suma Shah"
+  photo: ../assets/images/gen/participation/suma-shah.jpeg
+  link:  "https://www.dukehealth.org/find-doctors-physicians/suma-shah-md"
+  institution: "Duke Health"
+  degree: "MD"
+
 
 - name: "Tiffany Braley"
   photo: ../assets/images/gen/participation/tiffany-braley.png
