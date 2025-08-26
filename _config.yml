@@ -2,7 +2,7 @@
 # Jekyll Config
 # --------------------
 baseurl: ""
-url: "www.neuring.org"
+url: "https://www.neuring.org"
 permalink: pretty
 markdown: kramdown
 highlighter: rouge
@@ -13,6 +13,7 @@ plugins:
   - jekyll-environment-variables
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-seo-tag
 
 paginate: 6
 paginate_path: "/blog/page/:num"
@@ -66,7 +67,8 @@ exclude:
 # -------------------
 # Theme Config
 # --------------------
-title: "Jekyll Curate"
+title: "Neuring"
+description: "Neurologists advancing Womens health, Reproduction and Innovation Group"
 category_dir: category
 
 colors:
@@ -103,7 +105,7 @@ fonts:
   monospace: "Fira Mono"
   logo: "DM Sans"
 
-logo:
+logo_settings:
   logo_text: "NEU-RING"
   logo_image: assets/images/logo/logo.png
   logo_image_mobile: assets/images/logo/logo-mobile.png
