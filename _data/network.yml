@@ -65,6 +65,12 @@
   institution: "Mount Sinai"
   degree: "MD"
 
+- name: "Ingrid Loma-Miller"
+  photo: ../assets/images/gen/participation/loma-miller.jpeg
+  link:  "https://www.neurology.pitt.edu/people/ingrid-loma-miller-md"
+  institution: "University of Pittsburgh Medical School & UPMC"
+  degree: "MD"
+
 - name: "Joanna Cooper"
   photo: ../assets/images/gen/participation/joanna-cooper.jpeg
   link:  "https://www.sutterhealth.org/find-doctor/dr-joanna-a-cooper"
