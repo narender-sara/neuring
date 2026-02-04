@@ -77,6 +77,12 @@
   institution: "Sutter Telegraph Neurology"
   degree: "MD"
 
+- name: "Libby Levine"
+  photo: ../assets/images/gen/participation/libby-levine.jpg
+  link:  "https://www.neurology.columbia.edu/profile/libby-s-levine-msn"
+  institution: "Columbia University Department of Neurology"
+  degree: "MSN, APRN, AGNP-BC, MSCN"
+
 - name: "Lilyana Amezcua"
   photo: ../assets/images/gen/participation/lilyana-amezcua.jpeg
   link:  "https://keck.usc.edu/faculty-search/lilyana-amezcua/"
