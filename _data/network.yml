@@ -47,6 +47,12 @@
   institution: "University of Washington"
   degree: "MD"
 
+- name: "Burcu Zeydan"
+  photo: ../assets/images/gen/participation/zeydan-burcu-1.jpg
+  link:  "https://www.mayo.edu/research/faculty/zeydan-burcu-m-d/bio-20200696"
+  institution: "Mayo Clinic"
+  degree: "MD"
+
 - name: "Claire Riley"
   photo: ../assets/images/gen/participation/claire-riley.jpg
   link:  "https://www.neurology.columbia.edu/profile/claire-s-riley-md"
@@ -125,10 +131,4 @@
   link:  "https://medschool.umich.edu/profile/1267/tiffany-j-braley"
   institution: "University of Michigan"
   degree: "MD, MS"
-
-- name: "Zeydan Burcu"
-  photo: ../assets/images/gen/participation/zeydan-burcu-1.jpg
-  link:  "https://www.mayo.edu/research/faculty/zeydan-burcu-m-d/bio-20200696"
-  institution: "Mayo Clinic"
-  degree: "MD"
 
