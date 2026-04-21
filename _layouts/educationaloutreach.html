@@ -1,0 +1,202 @@
+---
+layout: default
+body_classes: page-educational-outreach
+---
+
+<style>
+  .speaker-card {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+  }
+
+  .speaker-photo {
+    flex: 0 0 150px;
+    margin-right: 25px;
+  }
+
+  .speaker-photo img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .speaker-info {
+    flex: 1;
+  }
+
+  .speaker-date {
+    font-weight: bold;
+    color: #0d042b;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+  }
+
+  .speaker-name {
+    font-weight: bold;
+    font-size: 1.05em;
+    margin-bottom: 8px;
+  }
+
+  .speaker-bio {
+    font-size: 0.95em;
+    line-height: 1.6;
+  }
+
+  .banner-image {
+    width: 100%;
+    max-width: 900px;
+    border-radius: 10px;
+    margin: 0 auto 30px auto;
+    display: block;
+  }
+
+  .disclaimer {
+    font-style: italic;
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 15px;
+  }
+
+  .section-divider {
+    border: 0;
+    border-top: 1px solid #e0e0e0;
+    margin: 30px 0;
+  }
+
+  @media (max-width: 767.98px) {
+    .speaker-card {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .speaker-photo {
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+  }
+</style>
+
+<div class="section" style="padding-top: 20px; padding-bottom: 40px;">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 heading-sub-heading">
+        {% include framework/blocks/sections/heading.html
+        subtitle=page.title
+        %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-12 col-lg-10">
+
+      <div class="heading-description" style="padding-bottom: 20px;">
+        <p>We are collaborating with International Organization of Multiple Sclerosis Nurses (IOMSN) to deliver a webinar on pregnancy-related topics, featuring clinicians from the NEU-RING network.</p>
+      </div>
+
+      <img src="../assets/images/gen/educational-outreach/webinar-banner.jpeg"
+        alt="Pregnancy and Breastfeeding with MS, NMO and MOGAD: Learn from the Experts! - Complimentary live webinar brought to you by IOMSN and NEU-RING"
+        class="banner-image">
+
+      <h2 style="padding-bottom: 10px;">Pregnancy and Breastfeeding with MS, NMO and MOGAD: Learn from Experts!</h2>
+
+      <div class="heading-description">
+        <p>Please join neurologist experts in women's health for an informational webinar outlining how you can prepare for a healthy pregnancy if you have a diagnosis of multiple sclerosis, neuromyelitis optica spectrum disorder or MOGAD. These webinars are held every two months by experts from the Neu-Ring Consortium (<a href="https://www.neuring.org">Neuring.org</a>) and moderated by a team led by Libby Levine, NP.</p>
+        <p class="disclaimer">*This informational webinar is not intended to replace the personalized medical advice of your specialist.</p>
+      </div>
+
+      <hr class="section-divider">
+
+      <h3 style="padding-bottom: 20px;">Speakers and Schedule</h3>
+
+      <div class="speaker-card">
+        <div class="speaker-photo">
+          <img src="../assets/images/gen/educational-outreach/anna-shah.png" alt="Dr. Anna Shah">
+        </div>
+        <div class="speaker-info">
+          <div class="speaker-date">Monday - March 2, 2026 &middot; 8:00 PM ET</div>
+          <div class="speaker-name">Anna Shah, MD</div>
+          <div class="speaker-bio">
+            Dr. Anna Shah is a neurologist specializing in Multiple Sclerosis (MS) and Neuroimmunology at the Rocky Mountain MS Center at the University of Colorado. She completed neurology residency at the University of Michigan and Neuroimmunology fellowship at the University of Colorado. She has a clinical and research interest in the intersection of women's health and MS.
+          </div>
+        </div>
+      </div>
+
+      <hr class="section-divider">
+
+      <div class="speaker-card">
+        <div class="speaker-photo">
+          <img src="../assets/images/gen/educational-outreach/suma-shah.png" alt="Dr. Suma Shah">
+        </div>
+        <div class="speaker-info">
+          <div class="speaker-date">Thursday - May 14, 2026 &middot; 8:00 PM ET</div>
+          <div class="speaker-name">Suma Shah, MD</div>
+          <div class="speaker-bio">
+            Dr. Suma Shah is an associate professor of neurology, specializing in Multiple Sclerosis (MS) and Neuroimmunology at Duke University who directs the Duke Neurology residency program and serves as associate director of clinical care for VA MS Centers of Excellence. She completed neurology residency and fellowship in MS/Neuroimmunology at Duke University. Her clinical and research endeavors focus on the intersection of women's health and MS/neuroimmunologic disorders.
+          </div>
+        </div>
+      </div>
+
+      <hr class="section-divider">
+
+      <div class="speaker-card">
+        <div class="speaker-photo">
+          <img src="../assets/images/gen/educational-outreach/lindsay-ross.png" alt="Dr. Lindsay Ross">
+        </div>
+        <div class="speaker-info">
+          <div class="speaker-date">Monday - July 20, 2026 &middot; 12:00 PM ET</div>
+          <div class="speaker-name">Lindsay Ross, MD</div>
+          <div class="speaker-bio">
+            Dr. Lindsay Ross is a neurologist specializing in Multiple Sclerosis (MS) and Neuroimmunology at the Cleveland Clinic Mellen Center for MS. She completed her neurology residency and neuroimmunology fellowship training at the Cleveland Clinic. In addition to her clinical care, Dr. Ross is an active researcher with a master's degree in clinical research and her most recent research focus is on women's health issues for persons with MS.
+          </div>
+        </div>
+      </div>
+
+      <hr class="section-divider">
+
+      <div class="speaker-card">
+        <div class="speaker-photo">
+          <img src="../assets/images/gen/educational-outreach/edith-graham.png" alt="Dr. Edith Graham">
+        </div>
+        <div class="speaker-info">
+          <div class="speaker-date">Tuesday - October 20, 2026 &middot; 1:00 PM ET</div>
+          <div class="speaker-name">Edith Graham, MD</div>
+          <div class="speaker-bio">
+            Dr. Edie Graham is a neurologist specializing in Multiple Sclerosis (MS) and Neuroimmunology at Northwestern University in Chicago, IL. She completed neurology residency at Rush University and Neuroimmunology fellowship at Northwestern University. Her clinical and research endeavors focus on the intersection of women's health and MS/neuroimmunologic disorders.
+          </div>
+        </div>
+      </div>
+
+      <hr class="section-divider">
+
+      <h3 style="padding-bottom: 20px;">Moderator</h3>
+
+      <div class="speaker-card">
+        <div class="speaker-photo">
+          <img src="../assets/images/gen/educational-outreach/libby-levine.png" alt="Libby Levine">
+        </div>
+        <div class="speaker-info">
+          <div class="speaker-name">Libby Levine, MSN, AGNP-BC, MSCN</div>
+          <div class="speaker-bio">
+            Libby Levine is a board-certified Adult Gerontology Primary Care Nurse Practitioner and Multiple Sclerosis Certified Nurse with over a decade of specialized experience in neuroimmunology at the Columbia University Medical Center's Multiple Sclerosis Center. Her clinical and research interests include the intersection of women's health and MS, as well as the role of metabolic health in MS disease progression.
+          </div>
+        </div>
+      </div>
+
+      <hr class="section-divider">
+
+      <div style="text-align: center; padding: 30px 0;">
+        <a href="https://iomsn.org/conferences-upcoming-events/" target="_blank"
+          style="background-color: #0d042b; color: white; padding: 15px 40px; text-decoration: none; border-radius: 8px; font-size: 1.1em; display: inline-block;">
+          Register through IOMSN Upcoming Events
+        </a>
+      </div>
+
+    </div>
+  </div>
+</div>
