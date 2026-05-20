@@ -53,10 +53,10 @@
   institution: "Mayo Clinic"
   degree: "MD"
 
-- name: "Claire Riley"
-  photo: ../assets/images/gen/participation/claire-riley.jpg
-  link:  "https://www.neurology.columbia.edu/profile/claire-s-riley-md"
-  institution: "Columbia University"
+- name: "Cory Dodson"
+  photo: ../assets/images/gen/participation/cory-dodson.jpeg
+  link:  "https://med.stanford.edu/neurology/faculty/residents/cory-dodson.html"
+  institution: "Stanford Medicine"
   degree: "MD"
 
 - name: "Edith Graham"
@@ -64,6 +64,12 @@
   link:  "https://www.nm.org/doctors/1043668239/edith-l-graham-md"
   institution: "Northwestern"
   degree: "MD"
+
+- name: "Hemali Patel"
+  photo: ../assets/images/gen/participation/hemali-patel.jpeg
+  link:  "https://www.bcm.edu/people-search/hemali-patel-109356"
+  institution: "Baylor College of Medicine"
+  degree: "DO"
 
 - name: "Ilana Katz Sand"
   photo: ../assets/images/gen/participation/ilana-sand.jpg
