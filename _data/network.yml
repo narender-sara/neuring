@@ -29,6 +29,12 @@
   institution: "UCSF Benioff Children's Hospital Oakland"
   degree: "DO"
 
+- name: "Alise Carlson"
+  photo: ../assets/images/gen/participation/alise-carlson.jpg
+  link:  "https://providers.clevelandclinic.org/provider/alise-carlson/4270370"
+  institution: "Cleveland Clinic"
+  degree: "MD, MS"
+
 - name: "Anna Shah"
   photo: ../assets/images/gen/participation/anna-shah.jpg
   link:  "https://som.cuanschutz.edu/Profiles/Faculty/Profile/29575"
