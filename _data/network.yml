@@ -95,6 +95,12 @@
   institution: "Sutter Telegraph Neurology"
   degree: "MD"
 
+- name: "Katrina Bawden"
+  photo: ../assets/images/gen/participation/katrina-bawden.jpg
+  link:  "https://www.rockymountainmsclinic.com/providers/katrina-bawden"
+  institution: "Rocky Mountain MS Clinic"
+  degree: "MSN, MSCN, FNP-C"
+
 - name: "Libby Levine"
   photo: ../assets/images/gen/participation/libby-levine.jpg
   link:  "https://www.neurology.columbia.edu/profile/libby-s-levine-msn"
@@ -143,4 +149,3 @@
   link:  "https://medschool.umich.edu/profile/1267/tiffany-j-braley"
   institution: "University of Michigan"
   degree: "MD, MS"
-
